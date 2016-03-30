@@ -8,9 +8,9 @@ input reset      // reset Input
 //-------------Code Starts Here-------
 always @(posedge clk)
 	if (reset) begin
-	  out <= 8'b0 ;
+	  out <= 2'b0 ;
 	end else if (enable) begin
-	  out <= out + 1;
+	  out <= out + 2'b01;
 	end
 
 

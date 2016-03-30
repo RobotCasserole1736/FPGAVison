@@ -8,7 +8,7 @@ output out  // output from mux
 );
 
 //-------------Code Starts Here-------
-reg [6:0] tmp;
+reg tmp;
 always @(*)
 	case(sel)
 		 2'b00: tmp = in0;

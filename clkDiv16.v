@@ -5,13 +5,13 @@ input reset      // reset Input
 );
 
 
-reg [16:0] count;
+reg [15:0] count;
 //-------------Code Starts Here-------
 always @(posedge clk)
 	if (reset) begin
-	  count <= 8'b0 ;
+	  count <= 16'b0 ;
 	end else begin
-	  count <= count + 1;
+	  count <= count + 16'b0000000000000001;
 	end
 
 	assign out = count[15];
